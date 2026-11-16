@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SatShare Network — Turn Your Eligible Unused Bandwidth Into Bitcoin</title>
+  <meta name="description" content="Contribute authorized internet bandwidth, support a decentralized network, and receive Bitcoin Lightning rewards. Opt-in only, via the official Android app. No guaranteed earnings." />
+  <meta property="og:title" content="SatShare Network — Turn Your Eligible Unused Bandwidth Into Bitcoin" />
+  <meta property="og:description" content="Contribute authorized internet bandwidth, support a decentralized network, and receive Bitcoin Lightning rewards." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/webp" href="assets/high_voltage.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">
+        <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/High%20voltage/3D/high_voltage_3d.png" onerror="this.onerror=null;this.src='assets/high_voltage.webp'" alt="" class="logo-icon" width="36" height="36" />
+        <span class="logo-text">Sat<span class="accent">Share</span> <span class="logo-sub">Network</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#how">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#wallets">Wallets</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#cta" class="btn btn-primary btn-sm">Start Earning</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="pill"><span class="pill-dot"></span> Bitcoin Lightning Rewards &middot; Opt-in Only</span>
+        <h1>Turn Your Eligible Unused Bandwidth Into <span class="accent">Bitcoin.</span></h1>
+        <p class="hero-sub">Contribute authorized internet bandwidth, support a decentralized network, and receive Bitcoin Lightning rewards.</p>
+        <div class="hero-ctas">
+          <a href="#how" class="btn btn-primary">Start Earning <i data-lucide="arrow-right"></i></a>
+          <a href="#how" class="btn btn-ghost">Learn How It Works</a>
+        </div>
+        <p class="hero-note"><i data-lucide="info"></i> Sharing happens only through the official Android app, with your explicit consent. Opening this website does not share your internet.</p>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <div class="hero-card-top">
+            <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Coin/3D/coin_3d.png" onerror="this.onerror=null;this.src='assets/coin.webp'" alt="Bitcoin coin" width="72" height="72" />
+            <div>
+              <p class="hero-card-label">Rewards paid in</p>
+              <p class="hero-card-value">Satoshis (SAT)</p>
+            </div>
+            <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/High%20voltage/3D/high_voltage_3d.png" onerror="this.onerror=null;this.src='assets/high_voltage.webp'" alt="Lightning" width="56" height="56" />
+          </div>
+          <div class="hero-card-rows">
+            <div class="hero-card-row"><span><i data-lucide="shield-check"></i> Explicit opt-in, always</span><span class="ok">Required</span></div>
+            <div class="hero-card-row"><span><i data-lucide="smartphone"></i> Android app only</span><span class="ok">Official client</span></div>
+            <div class="hero-card-row"><span><i data-lucide="zap"></i> Lightning withdrawals</span><span class="ok">BOLT11 &middot; LNURL</span></div>
+            <div class="hero-card-row"><span><i data-lucide="eye-off"></i> Your IP stays private</span><span class="ok">Never exposed</span></div>
+          </div>
+          <p class="hero-card-foot">Rewards depend on verified bandwidth and actual collected customer revenue. Nothing is guaranteed.</p>
+        </div>
+        <img class="hero-float hero-float-1" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Satellite/3D/satellite_3d.png" onerror="this.onerror=null;this.src='assets/satellite.webp'" alt="" width="64" height="64" />
+        <img class="hero-float hero-float-2" src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Globe%20with%20meridians/3D/globe_with_meridians_3d.png" onerror="this.onerror=null;this.src='assets/globe.webp'" alt="" width="72" height="72" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HONESTY STRIP ============ -->
+  <section class="strip">
+    <div class="container strip-inner">
+      <div class="strip-item"><i data-lucide="ban"></i><span>No fake mining</span></div>
+      <div class="strip-item"><i data-lucide="hand"></i><span>Opt-in only — never automatic</span></div>
+      <div class="strip-item"><i data-lucide="scale"></i><span>Rewards from real revenue only</span></div>
+      <div class="strip-item"><i data-lucide="lock"></i><span>No wallet keys ever stored</span></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>Three steps. Full control, start to finish.</h2>
+        <p>You decide when sharing is on, how much data it may use, and when it stops.</p>
+      </div>
+      <div class="steps">
+        <article class="step-card reveal">
+          <div class="step-num">1</div>
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Mobile%20phone/3D/mobile_phone_3d.png" onerror="this.onerror=null;this.src='assets/mobile_phone.webp'" alt="Android phone" width="72" height="72" />
+          <h3>Install the Android app</h3>
+          <p>Download the official SatShare Android app and sign in with your account. Bandwidth sharing is only possible through this authorized app — never from a browser.</p>
+        </article>
+        <article class="step-card reveal">
+          <div class="step-num">2</div>
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Check%20mark%20button/3D/check_mark_button_3d.png" onerror="this.onerror=null;this.src='assets/check_mark.webp'" alt="Explicit consent" width="72" height="72" />
+          <h3>Explicitly opt in to share</h3>
+          <p>Review the consent screen, set your Wi-Fi-only preference and daily/monthly data limits, then tap Start. You can pause or stop sharing at any time.</p>
+        </article>
+        <article class="step-card reveal">
+          <div class="step-num">3</div>
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Money%20with%20wings/3D/money_with_wings_3d.png" onerror="this.onerror=null;this.src='assets/money_with_wings.webp'" alt="Earn satoshis" width="72" height="72" />
+          <h3>Earn SAT, withdraw via Lightning</h3>
+          <p>Verified bandwidth earns a share of actual collected customer revenue. Withdraw your SAT to any BOLT11 invoice or Lightning Address.</p>
+        </article>
+      </div>
+      <p class="section-note reveal"><i data-lucide="alert-triangle"></i> Sharing stays disabled until an approved customer destination is configured. If there is no authorized buyer, there is no sharing — and no earnings.</p>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Built for real rewards — and real protection.</h2>
+        <p>Every design choice starts from consent, verification, and financial honesty.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Shield/3D/shield_3d.png" onerror="this.onerror=null;this.src='assets/shield.webp'" alt="" width="56" height="56" />
+          <h3>Authorized traffic only</h3>
+          <p>Only approved commercial destinations on a strict allowlist. No arbitrary third-party traffic, no unrestricted public proxy.</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/High%20voltage/3D/high_voltage_3d.png" onerror="this.onerror=null;this.src='assets/high_voltage.webp'" alt="" width="56" height="56" />
+          <h3>Lightning-fast payouts</h3>
+          <p>Withdraw SAT over the Bitcoin Lightning Network via BOLT11 invoices or Lightning Addresses (LNURL-pay).</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Chart%20increasing/3D/chart_increasing_3d.png" onerror="this.onerror=null;this.src='assets/chart_increasing.webp'" alt="" width="56" height="56" />
+          <h3>Revenue-based rewards</h3>
+          <p>A configurable share of actual collected customer revenue funds the reward pool. No revenue, no rewards — and we say so plainly.</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Locked/3D/locked_3d.png" onerror="this.onerror=null;this.src='assets/locked.webp'" alt="" width="56" height="56" />
+          <h3>Privacy by design</h3>
+          <p>Your private IP and sensitive device details are never exposed to customers. Traffic is encrypted and accounted server-side.</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Battery/3D/battery_3d.png" onerror="this.onerror=null;this.src='assets/battery.webp'" alt="" width="56" height="56" />
+          <h3>You set the limits</h3>
+          <p>Daily and monthly data caps, Wi-Fi-only mode, and battery monitoring. Sharing respects the boundaries you choose.</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Bar%20chart/3D/bar_chart_3d.png" onerror="this.onerror=null;this.src='assets/bar_chart.webp'" alt="" width="56" height="56" />
+          <h3>Verified, auditable ledger</h3>
+          <p>Every SAT movement is recorded in an immutable ledger. Server-side verification only — client-reported numbers are never trusted alone.</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Handshake/3D/handshake_3d.png" onerror="this.onerror=null;this.src='assets/handshake.webp'" alt="" width="56" height="56" />
+          <h3>Referral rewards</h3>
+          <p>Earn a configurable commission on verified rewards from people you refer — paid only after their contribution is verified.</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Globe%20with%20meridians/3D/globe_with_meridians_3d.png" onerror="this.onerror=null;this.src='assets/globe.webp'" alt="" width="56" height="56" />
+          <h3>Decentralized network</h3>
+          <p>Contributors around the world power an authorized bandwidth network for verified commercial customers.</p>
+        </article>
+        <article class="feature-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Link/3D/link_3d.png" onerror="this.onerror=null;this.src='assets/link.webp'" alt="" width="56" height="56" />
+          <h3>Fraud &amp; abuse prevention</h3>
+          <p>Signed sessions, duplicate and replay detection, and abuse controls keep rewards going to genuine contributors.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALCULATOR ============ -->
+  <section class="section" id="calculator">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Earnings Calculator</span>
+        <h2>Estimate — don't assume.</h2>
+        <p>Plug in your own numbers. Every result below is an <strong>estimate</strong> based on your inputs, not a promise.</p>
+      </div>
+      <div class="calc reveal">
+        <div class="calc-inputs">
+          <label>
+            <span>Eligible bandwidth contributed <em>(GB / month)</em></span>
+            <input type="number" id="calcBandwidth" min="0" step="1" value="100" />
+          </label>
+          <label>
+            <span>Actual customer price <em>(USD per GB)</em></span>
+            <input type="number" id="calcPrice" min="0" step="0.01" value="0.50" />
+          </label>
+          <label>
+            <span>User reward pool <em>(% of revenue)</em></span>
+            <input type="number" id="calcPool" min="0" max="100" step="1" value="60" />
+          </label>
+          <label>
+            <span>Operating cost <em>(USD / month)</em></span>
+            <input type="number" id="calcCost" min="0" step="1" value="10" />
+          </label>
+          <label>
+            <span>Bitcoin price <em>(optional — USD per BTC, to estimate SAT)</em></span>
+            <input type="number" id="calcBtc" min="0" step="1" placeholder="e.g. 90000" />
+          </label>
+          <p class="calc-disclaimer"><i data-lucide="alert-circle"></i> Bandwidth does not automatically generate revenue. Rewards exist only when verified bandwidth is sold to an approved customer and payment is actually collected.</p>
+        </div>
+        <div class="calc-outputs">
+          <h3>Estimated results <span class="estimate-tag">ESTIMATES</span></h3>
+          <div class="calc-row"><span>Estimated gross revenue</span><strong id="outGross">$0.00</strong></div>
+          <div class="calc-row"><span>Estimated user reward pool</span><strong id="outPool">$0.00</strong></div>
+          <div class="calc-row highlight"><span>Estimated individual reward</span><strong id="outReward">$0.00</strong></div>
+          <div class="calc-row"><span>Estimated reward in SAT</span><strong id="outSat">—</strong></div>
+          <div class="calc-row"><span>Platform operating costs</span><strong id="outCost">$0.00</strong></div>
+          <div class="calc-row"><span>Estimated gross profit</span><strong id="outProfit">$0.00</strong></div>
+          <p class="calc-foot">Estimates only. Real earnings depend on verified bandwidth, actual customer demand, collected revenue, and platform settings — and may be zero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WALLETS ============ -->
+  <section class="section section-alt" id="wallets">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Supported Wallets</span>
+        <h2>Withdraw to the Lightning wallet you already use.</h2>
+        <p>Any wallet that supports BOLT11 invoices or LNURL-pay (Lightning Addresses) works. Examples include:</p>
+      </div>
+      <div class="wallets-grid">
+        <div class="wallet-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/High%20voltage/3D/high_voltage_3d.png" onerror="this.onerror=null;this.src='assets/high_voltage.webp'" alt="" width="48" height="48" />
+          <h3>Phoenix</h3><p>Self-custodial Lightning wallet</p>
+        </div>
+        <div class="wallet-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Money%20bag/3D/money_bag_3d.png" onerror="this.onerror=null;this.src='assets/money_bag.webp'" alt="" width="48" height="48" />
+          <h3>Wallet of Satoshi</h3><p>Custodial Lightning wallet</p>
+        </div>
+        <div class="wallet-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Coin/3D/coin_3d.png" onerror="this.onerror=null;this.src='assets/coin.webp'" alt="" width="48" height="48" />
+          <h3>Breez</h3><p>Self-custodial Lightning wallet</p>
+        </div>
+        <div class="wallet-card reveal">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Rocket/3D/rocket_3d.png" onerror="this.onerror=null;this.src='assets/rocket.webp'" alt="" width="48" height="48" />
+          <h3>Muun</h3><p>Self-custodial Bitcoin &amp; Lightning wallet</p>
+        </div>
+      </div>
+      <p class="section-note reveal"><i data-lucide="info"></i> These are examples only — SatShare is not affiliated with any wallet provider. Any BOLT11 / LNURL-pay compatible wallet works. We never ask for your wallet's private keys or seed phrase.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Honest answers, no hype.</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">How much can I earn? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-a"><p>There is no guaranteed amount. Rewards depend on how much verified bandwidth you contribute, whether an approved customer buys it, what price they pay, and the platform's reward-pool settings. If there is no customer demand or no collected revenue, earnings are zero. Anyone promising a fixed daily income from bandwidth sharing is not being honest.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Does opening this website share my internet? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-a"><p>No. Opening a website cannot share your mobile or home internet. Bandwidth contribution only happens through the official SatShare Android app, after you explicitly opt in, and only while you choose to keep sharing on.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Is this Bitcoin mining? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-a"><p>No. SatShare is not mining, and we do not simulate mining. You are paid a share of real revenue from authorized bandwidth services sold to approved commercial customers — not from solving blocks or running a miner on your phone.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">How do withdrawals work? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-a"><p>Withdrawals are paid in satoshis over the Bitcoin Lightning Network. You provide a BOLT11 invoice from your wallet or a Lightning Address, and the payment is submitted through our Lightning backend. A payment is only recorded as successful after a verified payment response — never before.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">What traffic runs through my device? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-a"><p>Only traffic to destinations on a strict allowlist, for approved customers with verified legal authorization. Illegal, abusive, and prohibited traffic is blocked, and your device is never an unrestricted public proxy. Your private IP address is not exposed to customers.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Can I control how much I share? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-a"><p>Yes. The Android app lets you start, pause, and stop sharing, restrict sharing to Wi-Fi only, and set daily and monthly data limits. Battery usage is monitored so sharing does not drain your device.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Do you store my wallet keys or seed phrase? <i data-lucide="chevron-down"></i></button>
+          <div class="faq-a"><p>Never. SatShare never asks for, stores, or handles your wallet private keys or seed phrases. Withdrawals only need a payment invoice or a Lightning Address — both are safe to share.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="cta">
+    <div class="container cta-inner reveal">
+      <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/Rocket/3D/rocket_3d.png" onerror="this.onerror=null;this.src='assets/rocket.webp'" alt="" width="72" height="72" />
+      <h2>Ready when you are.</h2>
+      <p>The full SatShare platform — dashboard, Android app, and Lightning withdrawals — is in development. This page will link to the live app as soon as it launches.</p>
+      <a href="#how" class="btn btn-primary">Learn How It Works <i data-lucide="arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <img src="https://raw.githubusercontent.com/microsoft/fluentui-emoji/main/assets/High%20voltage/3D/high_voltage_3d.png" onerror="this.onerror=null;this.src='assets/high_voltage.webp'" alt="" class="logo-icon" width="30" height="30" />
+          <span class="logo-text">Sat<span class="accent">Share</span> Network</span>
+        </a>
+        <p>Decentralized bandwidth sharing with Bitcoin Lightning rewards. Opt-in only. No guaranteed earnings.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="#how">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="#calculator">Earnings Calculator</a>
+        <a href="#wallets">Supported Wallets</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#" class="coming" onclick="return false">Terms &amp; Conditions <span>coming soon</span></a>
+        <a href="#" class="coming" onclick="return false">Privacy Policy <span>coming soon</span></a>
+        <a href="#" class="coming" onclick="return false">Risk Disclosure <span>coming soon</span></a>
+        <a href="#" class="coming" onclick="return false">Contact <span>coming soon</span></a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> SatShare Network. All rights reserved.</p>
+      <p class="footer-legal">Legal documents arrive with the full platform launch. Nothing on this page is financial advice. Bitcoin rewards are not guaranteed.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
